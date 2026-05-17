@@ -17,4 +17,17 @@ public class Employee {
         this.country = country;
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append("Employee{")
+                .append("id=").append(id)
+                .append(", firstName='").append(firstName).append('\'')
+                .append(", lastName='").append(lastName).append('\'')
+                .append(", country='").append(country).append('\'')
+                .append(", age=").append(age)
+                .append('}')
+                .toString();
+    }
 }
